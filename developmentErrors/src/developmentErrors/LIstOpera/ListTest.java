@@ -6,13 +6,18 @@ import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 /**
  * @author onlyWjt
  * @date 2021年08月15日 10:47 上午
  * @desc
  */
 public class ListTest {
+    private static Logger logger = LoggerFactory.getLogger(ListTest.class);
     public static void main(String[] args) {
+
         int[] arr = {1, 2, 3};
         List list = Arrays.asList(arr);
         System.out.println("list:"+list+" size："+list.size()+" class"+list.get(0).getClass());
